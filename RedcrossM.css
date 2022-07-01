@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+body {
+    min-width: 320px;
+}
+
+.img_responsive {
+    width: 100%;
+    height: auto;
+}
+
+.sec01 .swiper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .top .inner {
+    max-width: 320px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.title_1 {
+    color: rgb(110, 100, 90);
+    margin-bottom: 22px;
+    font-size: 1.4rem;
+}
+
+.menu01 a>p {
+    font-size: 0.8rem;
+
+}
+
+header .top .inner .logo {
+    width: 158px;
+    height: 56px;
+}
+
+.icon01::after,
+.icon02::after,
+.icon03::after,
+.icon04::after,
+.icon05::after,
+.icon06::after,
+.icon07::after,
+.icon08::after {
+    font-size: 2rem;
+}
+
+video {
+    margin: -180px 0px 0 0px;
+    height: 200px;
+}
+
+
+
+.downloadimg {
+    display: none;
+}
+
+.redconnect {
+    margin: 170px 0 -40px 0px;
+}
+
+.blood {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.bloodlist .bloodimg {
+    position: relative;
+    display: flex;
+    width: 16%;
+}
+
+.sec03 {
+    flex-direction: column;
+    height: 535px;
+}
+
+.tabmenu label {
+    display: inline-block;
+    width: 72px;
+}
+
+.callbox {
+    margin: 24px 1px 16px 0px;
+}
+
+.footer_logo {
+    margin: 0 15px 0 27px;
+}
+
+.footerlogo {
+    width: 286px;
+    height: 53px;
+}
+
+footer {
+    font-size: 0.7rem;
+}
+
+.web {
+    left: 0px;
+}
+
+footer {
+    font-size: 0.8rem;
+    /* font-weight: 400; */
+    width: 100%;
+    height: 500px;
+}
+
+footer .box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.downloadbox {
+    margin: 4px 3px 0px 6px;
+}
+/* .icon07::after {
+    padding: 0 13px 0 0px;
+} */
+.icon08::after {
+    padding: 0px 26px 0px 24px;
+}

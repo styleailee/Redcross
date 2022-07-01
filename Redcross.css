@@ -1,0 +1,905 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+ /* Material Icons Outlined*/
+
+* {
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid rgb(252, 0, 0); */
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+a:link,
+a:visited {
+    color: rgb(110, 100, 90);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(220, 35, 35);
+}
+
+
+a:active {
+    color: rgb(110, 100, 90);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* header @->>---------------  */
+
+.headerTop {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 500;
+    background-color: #F9F9F7
+
+}
+
+header .top {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 200;
+    background-color: #fff;
+}
+
+header .top .inner {
+
+    max-width: 1720px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top .inner .logo {
+    width: 220px;
+    height: 54px;
+    background: url("/imges/redcross/logo.gif") 0 0 no-repeat;
+    background-size: contain;
+}
+
+header .top .inner .gnb {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto
+}
+
+header .top .inner .gnb span {
+    width: 160px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(110, 100, 90);
+    cursor: pointer;
+    letter-spacing: -2px;
+    line-height: 100%;
+    margin: 0 auto;
+  
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background: url(/imges/redcross/top011.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .top .inner .gnb span:first-child {
+    color: rgb(110, 100, 90);
+}
+header .top .inner .gnb .menu {
+    height: 0;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    min-width: 1280px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    
+}
+
+
+header .top .inner .gnb .menu > ul {
+    width: 160px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px 0 50px;
+}
+header .top .inner .gnb .menu > ul:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+header .top .inner .gnb .menu > ul > li {
+    min-height: 40px;
+    line-height: 40px;
+    position: relative;
+    font-weight: 400;
+    color: rgb(110, 100, 90);
+}
+
+header .top .inner .gnb .menu > ul > li > a {
+    text-decoration: none;
+    color: rgb(110, 100, 90);
+    display: block;
+    text-align: center;
+}
+
+/* top:hover시 상단디자인 */
+
+header .top:hover {
+    background: #fff;
+    transition: all 0.5s;
+}
+
+header .top:hover .inner .logo {
+    background: url("/imges/redcross/logo.gif") no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 10;
+
+}
+
+header .top:hover .inner .gnb span {
+    color: rgb(110, 100, 90);
+    position: relative;
+    z-index: 10;
+}
+header .top:hover .inner .gnb span {
+    color: rgb(240, 0, 0);
+}
+    
+header .top:hover .inner .gnb span:first-child:before {
+    right: unset;
+    left: 0;
+}
+
+header .top:hover .inner .gnb .menu {
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+}
+header .top .inner .gnb .menu a:hover {
+    color: rgb(240, 0, 0);
+}
+
+/* login */
+.navmanu{
+padding-top: 10px;
+
+}
+header .top .inner .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    color: rgb(110, 100, 90);
+}
+
+header .top .inner .login span {
+    margin: 0 0 0 10px;
+    position: relative;
+    font-size: 0.8rem;
+}
+header .top .inner .login a span:hover{
+ color: rgb(240, 0, 0);
+}
+header .top .inner .login span::after {
+    width: 1px;
+    height: 10px;
+    background: rgb(110, 100, 90);
+    position: absolute;
+    top: 6px;
+    right: -12px;
+    content: "";
+}
+
+header .top .inner .login span:last-child {  
+    padding: 2px 5px;
+}
+
+header .inner .login span:nth-child(3)::after,
+header .inner .login span:last-child::after {
+    display: none;
+}
+
+/* top:hover일 때 login  */
+
+header .top:hover .inner .login span {
+    color: rgb(110, 100, 90);
+    position: relative;
+    z-index: 10;
+}
+
+header .top:hover .inner .login span::after {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* header디자인 */
+header .title {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: rgb(110, 100, 90);
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+header .title::after {
+    width: 1px;
+    height: 40px;
+    display: block;
+    margin: 5px auto 0;
+    content: "";
+    background: #fff;
+}
+
+header .location {
+    max-width: 1500px;
+    height: 20px;
+    margin: 45px auto 0;
+    text-align: right;
+    color: rgb(110, 100 90);
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+header .location span {
+    margin: 0 10px 0 0;
+    position: relative;
+    border: 1px solid rgb(110, 100, 90);
+}
+
+header .location span:last-child {
+    margin: 0;
+}
+
+header .location span::before {
+    position: absolute;
+    right: -16px;
+    font-size: 0.8rem;
+
+}
+
+header .location span:last-child::before {
+    display: none;
+}
+
+.title_1 {
+    color: rgb(110, 100, 90);
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* 슬라이드>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.sec01 .swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.sec01 .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.sec01 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img01 {
+    background: url(/imges/redcross/mv_pc_banner0607_01.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.img02 {
+    background: url(/imges/redcross/mv_pc_banner0616_02.jpg);
+    background-size: cover;
+}
+
+.img03 {
+    background: url(/imges/redcross/mv_pc_banner0601_03.jpg);
+    background-size: cover;
+}
+
+.img04 {
+    background: url(/imges/redcross/mv_pc_banner1207_04.jpg);
+    background-size: cover
+}
+
+/* 주요서비스 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.sec02 a {
+    text-align: center;
+}
+
+.sec02 img {
+    width: 95px;
+    height: 95px;
+    margin: 20px 15px 10px 15px;
+
+}
+
+.sec02 {
+    display: flex;
+    margin: 100px 0 40px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec02 .menu01 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -35px 0 0 0px;
+}
+
+.sec02 .menu01 > a {
+    margin: 0 30px
+}
+
+.sec02 .menu {
+    margin: 44px;
+}
+
+.icon01::after {
+    content: "\f7f2";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon02::after {
+    content: "\f271";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon03::after {
+    content: "\f80d";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon04::after {
+    content: "\f4be";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon05::after {
+    content: "\f65e";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon06::after {
+    content: "\f1ac";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon07::after {
+    content: "\f23e";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.menu01 a > p {
+    line-height: 100%;
+    color: rgb(110, 100, 90);
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.icon08::after {
+    content: "\f7f5";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.icon01:hover,
+.icon02:hover,
+.icon03:hover,
+.icon04:hover,
+.icon05:hover,
+.icon06:hover,
+.icon07:hover,
+.icon08:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Tab>>>>>>>>>>>>>>>>>> */
+.sec03 {
+    display: flex;
+    justify-content: center;
+}
+
+.sec03 {
+    background-color: #eee8e8;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    box-shadow:0 13px 40px -20px rgb(153, 153, 153)
+
+}
+
+.sec03 .blood .text span {
+    font-size: 0.8rem;
+    color: rgb(110, 100, 90);
+}
+
+.sec03 .blood .text p {
+    font-size: 0.5rem;
+    color: rgb(110, 100, 90);
+}
+
+.sec03 .bloodicon .icon a {
+    font-size: 1rem;
+}
+.tabmenu input[type="radio"] {
+    display: none;
+}
+
+.tabmenu label {
+    display: inline-block;
+    width: 93px;
+    padding: 13px 0px;
+    background: #cfcaca;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.tabmenu {
+ margin: 20px 41px 0 32px;
+}
+
+.tabmenu a {
+    padding: 0 5px 0 0px;
+
+}
+
+.tabmenu > div {
+    width: 500px;
+    height: 207px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ffffff;
+    display: none;  
+}
+
+.tabmenu input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+.tabmenu #tab1:checked ~ #cont1,
+.tabmenu #tab2:checked ~ #cont2,
+.tabmenu #tab3:checked ~ #cont3,
+.tabmenu #tab4:checked ~ #cont4 {
+    display: block;
+    line-height: 20px;
+    color: rgb(110, 100, 90);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 0 10px 10px 10px;
+
+}
+
+.tab-inner {
+    font-size: 2.3rem;
+}
+.bloodimg h2 {
+    color: rgb(110, 100, 90)
+}
+#counter1,
+#counter2,
+#counter3,
+#counter4 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(240, 0, 0);
+}
+
+#cont1 ul > li a,
+#cont2 ul > li a,
+#cont3 ul > li a,
+#cont4 ul > li a {
+    line-height: 2;
+    padding: 0 0 0 15px;
+    text-decoration: underline;
+
+}
+.blood {
+    width: 490px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bloodlist {
+    display: flex;
+    width: 100%;
+}
+.bloodlist .bloodimg {
+    position: relative;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bloodimg img {
+    position: relative;
+    z-index: 100;
+    vertical-align: bottom;
+}
+.bloodimg > div {
+    position: relative;
+    z-index: 50;
+
+}
+
+.bloodimg > div::before {
+    display: block;
+    width: 54px;
+    height: 0%;
+    content: '';
+    background: rgb(240, 0, 0);
+    position: absolute;
+    z-index: 10;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+/* o형 50% */
+.bloodimg:nth-child(1) > div.on::before {
+    height: 150%;
+    transition: all 5s;
+}
+.bloodimg:nth-child(2) > div.on::before {
+    height: 150%;
+    transition: all 5s;
+}
+.bloodimg:nth-child(3) > div.on::before {
+    height: 180%;
+    transition: all 5s;
+}
+.bloodimg:nth-child(4) > div.on::before {
+    height: 190%;
+    transition: all 5s;
+}
+.blood01 {
+    display: flex;
+    flex-direction: column;
+}
+.tab-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_01 {
+    background: url(/imges/redcross/nav.png)no-repeat;
+    width: 178px;
+    height: 184px;
+    background-size: contain;
+
+}
+
+.sec04 {
+    background-color: #eee8e8;
+    width: 100%;
+    height: 500px;
+    margin: 80px auto 0;
+    box-shadow:0 13px 40px -20px rgb(153, 153, 153)
+}
+.sec04 h2 {
+    /* margin: 0px 0 10px 0px; */
+    padding: 25px;
+    text-align: center;
+    font-size: 1.9rem;
+    color: rgb(110, 100, 90);
+    
+}
+
+.sns {
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sns .box {
+    width: 330px;
+    height: 300px;
+    margin: 0 40px 0 40px;
+  
+}
+
+ 
+
+.sns01 {
+    background: url(/imges/redcross/적십자소식02.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    border-radius: 30px;
+    box-shadow:3px 3px 7px 3px rgb(110, 100, 90);
+}
+
+.sns02 {
+    background: url(/imges/redcross/적십자소식01.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    border-radius: 30px;
+    box-shadow:3px 3px 7px 3px rgb(110, 100, 90);
+}
+
+.sns03 {
+    background: url(/imges/redcross/적십자소식03.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    border-radius: 30px;
+    box-shadow:3px 3px 7px 3px rgb(110, 100, 90);
+}
+
+.sec04 .sns .text p {
+    padding: 15px 15px 0 15px;
+    font-size: 0.9rem;
+}
+.text {
+    font-size: 0.4rem;
+    width: 343px;
+    height: 46px;
+    padding: 11px 0 0 0px;
+}
+
+.red img {
+    width: 150px;
+    height: 150PX;
+}
+
+.red02 {
+    display: flex;
+
+}
+.red {
+    display: flex;
+
+}
+.redconnect {
+    margin: 140px 0 140px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redconnecttext {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px 0 25px;
+    font-size: 1rem;
+    color: rgb(110, 100, 90);
+}
+.downloadimg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+
+.sec05 {
+    margin: 90px 0 60px 0px;
+}
+.banner {
+    margin: 0 0 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+.sec05 .banner .swiper {
+    width: 565px;
+    height: 380px;
+}
+:root {
+    --swiper-theme-color: rgb(110, 100, 90);
+}
+.s01 {
+    background: url(/imges/redcross/banner.03.jpg) no-repeat;
+    background-size: cover;
+}
+.s02 {
+    background: url(/imges/redcross/banner.02.jpg) no-repeat;
+    background-size: cover;
+}
+.s03 {
+    background: url(/imges/redcross/banner.03.jpg) no-repeat;
+    background-size: cover;
+}
+.s04 {
+    background: url(/imges/redcross/banner.04.jpg) no-repeat;
+    background-size: cover;
+}
+.s05 {
+    background: url(/imges/redcross/alrimpan_0318_01.jpg) no-repeat;
+    background-size: cover;
+}
+.right_sns_img {
+    background: url(/imges/redcross/banner_area_img220601_01.png) no-repeat;
+    background-size: cover;
+    width: 307px;
+    height: 300px;
+    margin: 0 0 14px 0px;
+}
+
+.right_sns {
+    display: flex;
+    justify-content: center;
+}
+.right_sns a {
+    margin: 5px;
+
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 240px;
+}
+/* footer -------------------------------------- */
+
+.footerstyle {
+    width: 100%;
+}
+footer {
+    font-size: 0.8rem;
+    /* font-weight: 400; */
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+    background-color: #eee8e8;
+    font-style: normal;
+    color:rgb(110, 100, 90)
+   
+} 
+footer .box{
+    display: flex;
+    color:rgb(240, 0, 0);
+    background-color: rgba(216, 203, 203, 0.719);
+}
+footer .box img{
+    width: 16px;
+    height: 16px;   
+}
+.downloadbox{
+    margin:  5px 20px 5px 53px; 
+    background-color: rgb(190, 178, 180);
+} 
+.downloadbox span{
+    font-size: 0.9rem;
+}
+.footerlist{
+    margin:  5px 5px 5px 5px;
+}
+footer .inner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+.footerlogo {
+    width: 230px;
+    height: 78px;
+    background: url(../../imges/redcross/footerlogo.png) 50% 50% no-repeat;
+    background-size: contain;
+
+}
+
+.material-icons-outlined {
+    width: 30px;
+    height: 30px;
+}
+.callbox span{
+    font-size: 1rem; 
+    color:rgb(110, 100, 90)
+}
+.callbox p{
+    color: rgb(240, 0, 0);
+    font-size: 1rem;
+    padding: 0 0 0 30px;
+}
+.callbox{
+    margin: 20px 23px 0 -123px;
+}
+
+
+.footerinner01:first-child a::after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: rgb(110, 100, 90);
+    margin: 0 10px;
+}
+.footer_logo{
+    margin-top: 20px;
+}
+.web{
+position:relative;
+top:40px;
+left: 122px;
+}
+/* --------------------------------------------------- */
+a#TOP {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+    border: dotted;
+    color: rgb(110, 100, 90);
+}
+
+video {
+    width: 100%;
+    height: 400px;
+    margin: 57px 46px 0 -16px
+}
+
+

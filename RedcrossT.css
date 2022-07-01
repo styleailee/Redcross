@@ -1,0 +1,136 @@
+@charset "utf-8";
+body{
+   
+    min-width: 768px;
+}
+
+header .top .inner .gnb{
+    display: none;
+} 
+header{
+    background: none;
+}
+header .inner .logo{
+    position: relative;
+    left: 52px;
+    top: 42px;
+}
+header .location{
+    display: none;
+} 
+header .top .inner .login{
+    flex-direction: column;
+}
+.navmanu{
+    position: relative;
+    top: 17px;
+    left:66px ;
+}
+header .top .inner .login {   
+    width: 230px;
+}
+
+
+.img01{
+    background: url(/imges/redcross/mv_mb_banner0517_01.jpg) no-repeat;
+}
+.img02{
+    background: url(/imges/redcross/mv_mb_banner0601_01.jpg) no-repeat;
+}
+.img03{
+    background: url(/imges/redcross/mv_mb_banner0610_01.png) no-repeat;
+}
+.img04{
+    background: url(/imges/redcross/mv_mb_banner0616_01.jpg) no-repeat;
+}
+.sec02{
+    margin: 16px 0 0px 0px;
+}
+.sec02 .menu01 > a {
+    margin: 0 auto;
+}
+.menu01 a > p {
+    font-size: 0.9rem;
+    margin: 15px 11px 7px 5px;
+}
+.sec03{
+    flex-direction: column;
+    height: 800px;
+ 
+}
+video {
+    width: 100%;
+    height: 500px;
+    margin: -228px 0px 0 0px;
+}
+/* .blood01{
+ margin: 0 0 0 0px;
+} */
+.blood{
+display: flex;
+flex-wrap: wrap
+}
+#cont1 ul > li a,
+#cont2 ul > li a,
+#cont3 ul > li a,
+#cont4 ul > li a {
+    font-size: 0.9rem;
+    padding: 5px;
+}
+.tabmenu > div {
+    width: 415px;
+    height: 182px;
+}
+.text {
+    font-size: 0.4rem;
+    width: 343px;
+    height: 80px;
+    padding: 0px 0 0 6px;
+}
+.redconnect {
+    margin: 50px 0 0 0px;
+    flex-direction: column;
+}
+.sns{
+    flex-direction: column;
+    align-items: center   
+}
+.sns .box {
+    margin: 0 40px 30px 40px;}
+.sec04{
+    height: 1050px;
+}
+
+.sec04 .sns .text p{
+font-size: 0.8rem;
+
+}
+.box{
+    height: 310px;
+}
+footer .box{
+    height: 30px;
+}
+.right{
+    margin: 0 auto;
+}
+
+.callbox {
+    margin: 13px 308px 0 0px;
+}
+.footer_logo {
+    margin-top: 48px;
+}
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.web {
+    top: 10px;
+    left: 20px;
+}
+a#TOP{
+    display: none;
+}    
+
